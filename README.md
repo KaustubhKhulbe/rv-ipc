@@ -28,4 +28,4 @@ Let Hart 0 be the producer, and Hart 1 be the consumer.
 - Hart 0/1 have to poll with `fstatus`. In a many-core system, this can cause back pressure on the pool to service these instructions
 - The reason for this is to allow the instructions to resolve by the WB stage of the core
     - If the request succeeded/failed, we would know by the WB stage, since we keep polling
-
+    - We also want to avoid trapping into the kernel, and do the entire communication via user space. This will come at the cost of no interrupts, but we expect handshakes to be low latency and not be IO-bound.
