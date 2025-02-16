@@ -1,0 +1,3 @@
+build/RISCV/gem5.fast --outdir=m5out/ configs/learning_gem5/part1/simple-riscv.py 
+build/RISCV/gem5.fast --outdir=m5out/ configs/deprecated/example/se.py --cpu-type=RiscvTimingSimpleCPU --num-cpus=2 --cmd="ipc_bin/test_send;ipc_bin/test_recv"
+scons build/RISCV/gem5.fast -j 24
