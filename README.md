@@ -1,5 +1,15 @@
 # rv-ipc
 
+## Layout
+```
+.
+├── gem5                   # Modifications to the gem5 part of RVipc
+├── ipc_bin                # IPC binaries to test
+├── riscv-opcodes          # Macros to build a custom toolchain
+├── toolchain              # Modifications to official RISC-V toolchain
+└── README.md
+```
+
 ## Handshake Protocol
 
 Let Hart 0 be the producer, and Hart 1 be the consumer.
