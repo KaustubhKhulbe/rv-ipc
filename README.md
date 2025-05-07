@@ -7,6 +7,7 @@
 ├── ipc_bin                # IPC binaries to test
 ├── riscv-opcodes          # Macros to build a custom toolchain
 ├── toolchain              # Modifications to official RISC-V toolchain
+├── shm / other testing scripts
 └── README.md
 ```
 
